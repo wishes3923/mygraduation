@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="header_box">
+    <div class="header clearfix">
+        <div class="logo fl">
+        	<a href="index.html">
+            	<img src="img/logo.jpg"  alt="logo" data-bd-imgshare-binded="1">
+            </a>
+        </div>
+        <div class="search fr">
+        	<p>
+            	湖南永州欢迎您
+            	<a href="#">设为主页</a>
+                <a href="#">收藏本站</a>
+            </p>
+            <div class="search_box">
+            	<a class="fr" href="#">English</a>
+                <a class="fr" href="#">中文 |</a>
+                <div class="search_btn fr"></div>
+            	<input class="fr" type="text" placeholder="search......">
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航栏-->
+<div class="next">
+    <div class="next_1">
+      <a href="index.html">
+        <div class="n1">首页</div>
+      </a>
+      <a href="legation.html">
+        <div class="n1">入馆须知</div>
+      </a>
+      <a href="news.html">
+        <div class="n1">新闻动态</div>
+      </a>
+      <a href="consulate.html">
+        <div class="n1">展厅介绍</div>
+      </a>
+      <a href="reservation.html">
+        <div class="n1">预约参观</div>
+      </a>
+    </div>
+  </div>
+  <!-- 实时系统时间和通知公告 -->
+  <div class="do">
+    <!-- 实时系统时间 -->
+    <div class="date">
+      <div id="dateTime"></div>
+    </div>
+    <!-- 通知公告 -->
+    <div class="notice">
+      <!-- 圆角通告框 -->
+      <div class="oval">
+        <a href="oval_notice.html">通知公告</a>
+      </div>
+      <!-- 超链接 -->
+      <div class="link">
+        <a style="display: block; height: 50px; line-height: 50px; font-size: 18px"
+          href="oval_notice.html">学习贯彻党的十九届六中全会精神
+          <span>2021-11-18</span>
+        </a>
+      </div>
+    </div>
+  </div>
+<!-- 轮播图 -->
+<div class="lunbotu">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-center none-effect">
+            <a href="#">
+              <img src="img/banner1.jpg">
+            </a>
+            <div class="layer-mask"></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/banner2.jpg">
+            </a>
+            <div class="layer-mask"></div>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/banner3.jpg">
+            </a>
+            <div class="layer-mask"></div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <script type="text/javascript" src="js/swiper.min.js"></script>
+      <script type="text/javascript">
+        window.onload = function () {
+          var swiper = new Swiper('.swiper-container', {
+            autoplay: false,
+            speed: 1000,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 2,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            onInit: function (swiper) {
+              swiper.slides[2].className = "swiper-slide swiper-slide-active";
+            },
+            breakpoints: {
+              668: {
+                slidesPerView: 1,
+              }
+            }
+          });
+        }
+      </script>
+    </div>
+</div>
+<!--四个展厅-->
+<div class="product_center">
+	<div class="pro_center">
+    	<div class="pro_title">
+        	<p>
+                <span class="sp1">四个展厅</span>
+                <span>four exhibition halls</span>
+            </p>
+        </div>
+        <div class="pro_pics">
+        <div class="ladyScroll wrapper">
+						<a class="prev" href="javascript:void(0)"></a>
+                <div class="scrollWrap">
+                        <div class="dlList">
+                            <dl>
+                              <dt><a href="start.html"><img src="img/display3.jpg" width="250" height="240" alt="pic1"/></a><span></span></dt>
+                              <dd>开天辟地</dd>
+                            </dl>
+
+                            <dl>
+                              <dt><a href="cabal.html"><img src="img/display2.jpg" width="250" height="240" alt="pic1"/></a><span></span></dt>
+                              <dd>改天换地</dd>
+                            </dl>
+
+                            <dl>
+                              <dt><a href="change.html"><img src="img/display1.jpg" width="250" height="240" alt="pic1"/></a><span></span></dt>
+                              <dd>翻天覆地</dd>
+                            </dl>
+
+                            <dl>
+                              <dt><a href="shake.html"><img src="img/display4.jpg" width="250" height="240" alt="pic1"/></a><span></span></dt>
+                              <dd>惊天动地</dd>
+                            </dl>
+                        </div>
+                </div>
+                <a class="next" href="javascript:void(0)"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--新闻资讯-->
+<div class="news_info">
+	<div class="ns_info ">
+    	<div class="news_title">
+        	<p class="p1">
+                <span class="sp1">新闻资讯</span>
+                <span>NEWS</span>
+            </p>
+        </div>
+        <ul class="ns_det clearfix">
+        	<li>
+            	<div class="fl">
+                	<a href="https://yz.rednet.cn/content/2021/12/22/10669154.html"><img src="img/lepic1.jpg" width="180" height="115" alt="news"/></a>
+                </div>
+                <div class="news_summary fr">
+                	<h3>永州市中医药5G人工智能平台建设推进会在零陵召开</h3>
+                    <p><span>[2021-12-22]</span> <a href="https://yz.rednet.cn/content/2021/12/22/10669154.html">红网时刻12月22日讯（记者 周纯 通讯员 杨志军 赵贵松）12月22日上午，永州市中医药5G人工智能平台建设推进会在零陵召开。永州市政协副主席、市卫健委主任欧阳德群主持会议，零陵区委书记赵立平出席并致辞。</a></p>
+                    <span class="learn_more">更多>></span>
+                </div>
+            </li>
+            <li>
+            	<div class="fl">
+                	<a href="https://yz.rednet.cn/content/2021/12/17/10630152.html"><img src="img/lepic2.png" width="180" height="115" alt="news"/></a>
+                </div>
+                <div class="news_summary fr">
+                	<h3>永州：开展根治欠薪专项行动 让民工安“薪”无忧</h3>
+                    <p><span>[2021-12-17]</span> <a href="https://yz.rednet.cn/content/2021/12/17/10630152.html">红网时刻12月17日讯（记者 王杨）12月17日下午，永州市召开2021年根治欠薪冬季专项行动新闻发布会。发布会上，永州市人力资源和社会保障局党组书记、局长骆方方介绍全市根治欠薪冬季专项行动前期开展情况，市人力资源和社会保障局党组成员、副局长邹越就有关问题回答记者提问。</a></p>
+                    <span class="learn_more">更多>></span>
+                </div>
+            </li>
+            <li class="ns_mt">
+            	<div class="fl">
+                	<a href="https://yz.rednet.cn/content/2021/12/19/10632338.html"><img src="img/lepic3.png" width="180" height="115" alt="news"/></a>
+                </div>
+                <div class="news_summary fr">
+                	<h3>论文写在大地上—记第二届湖南省优秀科技工作者柏劲松</h3>
+                    <p><span>[2021-12-19]</span> <a href="https://yz.rednet.cn/content/2021/12/19/10632338.html">红网时刻12月19日讯（通讯员 王曙明）在科技同行眼中，他是攀登者，敢拼善拼，硕果累累；在单位同事眼中，他是大忙人，每天总闲不了；在种植专业户眼中，他是贴心人，当遇到难题时他总是耐心解答。他以自己的聪明才智、满腔热情、无私爱心和不懈追求，将汗水挥洒在广袤的潇湘大地上，将智慧奉献在脱贫攻坚和乡村振兴事业中。他就是第二届湖南省优秀科技工作者、永州职业技术学院研究员柏劲松。</a></p>
+                    <span class="learn_more">更多>></span>
+                </div>
+            </li>
+            <li class="ns_mt">
+            	<div class="fl">
+                	<a href="https://yz.rednet.cn/content/2021/12/20/10633251.html"><img src="img/lepic4.png" width="180" height="115" alt="news"/></a>
+                </div>
+                <div class="news_summary fr">
+                	<h3>永州市法学会工作座谈会圆满召开</h3>
+                    <p><span>[2021-12-20]</span> <a href="https://yz.rednet.cn/content/2021/12/20/10633251.html">红网时刻12月20日讯 12月18日，永州市法学会工作座谈会在冷水滩华天大酒店召开。会议由市委政法委四级调研员罗晓秀主持，湖南省法学会副秘书长夏鸽翔、永州市委政法委常务副书记、市法学会常务副会长唐国玉出席会议并作工作点评，各县（市）区法学会负责人参加了会议。</a></p>
+                    <span class="learn_more">更多>></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--图片分享-->
+	<div class="lepu_com">
+    	<div class="lepu_title">
+        	<p class="p2">
+                <span class="sp1">图片分享</span>
+                <span>image sharing</span>
+            </p>
+        </div>
+        <h3 class="h3_mt">
+          <a href="withshare.html">峥嵘岁月</a>
+        </h3>
+        <ul class="lepu_pic clearfix">
+        	  <li><a href="withshare.html"><img src="img/earth.jpg" width="253" height="156" /></a></li>
+            <li><a href="withshare.html"><img src="img/product1_15.jpg" width="253" height="156" /></a></li>
+            <li><a href="withshare.html"><img src="img/top5_1.jpg" width="253" height="156" /></a></li>
+            <li><a href="withshare.html"><img src="img/top5_2.jpg" width="253" height="156" /></a></li>
+
+        </ul>
+        <h3>
+          <a href="aboutyong.html">新时代</a> 
+        </h3>
+        <ul class="lepud_pic">
+        	
+             <div class="ladyScroll wrapper">
+						<a class="prev" href="javascript:void(0)"></a>
+                <div class="scrollWrap">
+                        <div class="dlList">
+                            <dl>
+                              <dt><a href="aboutyong.html"><img src="img/psc22.jpg" width="144" height="88" alt="lepu"/></a></dt>
+                            </dl>
+
+                            <dl>
+                              <dt><a href="aboutyong.html"><img src="img/psc31.jpg" width="144" height="88" alt="lepu"/></a></dt>
+                            </dl>
+
+                            <dl>
+                              <dt><a href="aboutyong.html"><img src="img/yong.jpg" width="144" height="88" alt="lepu"/></a></dt>
+                            </dl>
+
+                            <dl>
+                              <dt><a href="aboutyong.html"><img src="img/psc2.jpg" width="144" height="88" alt="lepu"/></a></dt>
+                            </dl>
+                            <dl>
+                              <dt><a href="aboutyong.html"><img src="img/psc6.jpg" width="144" height="88" alt="lepu"/></a></dt>
+                            </dl>
+                            <dl>
+                              <dt><a href="aboutyong.html"><img src="img/psc1.jpg" width="144" height="88" alt="lepu"/></a></dt>
+                            </dl>
+                        </div>
+                </div>
+                <a class="next" href="javascript:void(0)"></a>
+            </div>
+        </ul>
+    </div>
+</div>
+<!-- 永州时事 -->
+<div class="current_box">
+    <div class="current_title">
+        <p class="p2">
+            <span class="sp1">实时关注</span>
+            <span>Real - time concerns</span>
+        </p>
+    </div>
+    <h3>永州时事</h3>
+    <div class="current">
+        <ul type="disc" style="color: #FF0000">
+            <li>
+              <a style="
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                text-decoration: none;
+                color: #FF0000;
+              " href="mess1.html">冷水滩区舜德小学：春季开学 安全先行
+                <span>2022-02-17</span>
+              </a>
+            </li>
+  
+  
+            <li>
+              <a style="
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                text-decoration: none;
+                color: #FF0000;
+              " href="mess7.html">中国石化永州石油三个“优化”助力年货节销售
+                <span>2022-02-17</span>
+              </a>
+            </li>
+  
+            <li>
+              <a style="
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                text-decoration: none;
+                color: #FF0000;
+              " href="mess3.html">美食体验游——追逐舌尖上的年味记忆
+                <span>2022-02-06</span>
+              </a>
+            </li>
+  
+            <li>
+              <a style="
+                display: block;
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+                text-decoration: none;
+                color: #FF0000;
+              " href="mess2.html">赵立平督导春节安全稳定、疫情防控工作
+                <span>2022-02-04</span>
+              </a>
+            </li>
+          </ul>
+    </div>
+    <div class="current2">
+        <ul type="disc" style="color: #FF0000"> 
+            <li>
+                <a style="
+                  display: block;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: 18px;
+                  text-decoration: none;
+                  color: #FF0000;
+                " href="mess5.html">湖南永州：铁路养护迎春运（组图）
+                  <span>2022-01-16 </span>
+                </a>
+              </li>
+    
+              <li>
+                <a style="
+                  display: block;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: 18px;
+                  text-decoration: none;
+                  color: #FF0000;
+                " href="mess8.html">人山人海！零陵住博会盛大开幕
+                  <span>2021-12-17</span>
+                </a>
+              </li>
+    
+              <li>
+                <a style="
+                  display: block;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: 18px;
+                  text-decoration: none;
+                  color: #FF0000;
+                " href="mess4.html">碣滩茶：乡村振兴中的品牌化探索
+                  <span>2021-12-10</span>
+                </a>
+              </li>
+    
+              <li>
+                <a style="
+                  display: block;
+                  height: 50px;
+                  line-height: 50px;
+                  font-size: 18px;
+                  text-decoration: none;
+                  color: #FF0000;
+                " href="mess6.html">零陵凼底乡开展预防外流贩毒专题宣传
+                  <span>2021-12-04</span>
+                </a>
+              </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 百度百科 -->
+<div class="enc_title">
+    <p class="p2">
+        <span class="sp1">百度百科</span>
+        <span>encyclopedia</span>
+    </p>
+</div>
+<div class="enc">
+    <div class="scene">
+        <article class="book">
+          <section class="page active">
+            <div class="front">
+              <header class="htmleaf-header">
+                <h1>百度百科-------<span>永州 （湖南省辖地级市）</span></h1>
+                <div class="htmleaf-links" style="font: 18px/24px 'Microsoft YaHei';margin: 10px 0 0 10px;">
+                  <a class="htmleaf-icon icon-htmleaf-home-outline"
+                    href="https://baike.baidu.com/item/%E6%B0%B8%E5%B7%9E/720137" title="百度百科" target="_blank">
+                    <span> 永州</span>
+                  </a>
+                </div>
+              </header>
+              <h1>永州，雅称“潇湘”</h1>
+              <p>
+                湖南省辖地级市，国务院批复确定的国家历史文化名城，
+                位于湖南南部，潇、湘二水汇合处，下辖2个区8个县，代管1个县级市，总面积2.24万平方千米，
+                地势三面环山、地貌复杂多样。根据第七次人口普查数据，2020年11月1日零时，永州市常住人口为5289824人。
+              </p>
+              <p>
+                永州市首批“全国禁毒示范城市”名单城市和国家森林城市。
+                永州境内通过湘江北上可抵长江，南下经灵渠可通珠江水系，自古代便是重要的交通要塞，是湖南通往广西、海南、粤西及西南各地的门户。
+              </p>
+              <p>
+                自公元前124年始置泉陵侯国以来，永州已有2100多年的建制史。此外，永州还是怀素、黄盖、周敦颐、李达、陶铸等历史名人的故乡。
+                2021年1月29日，入选湖南省人民政府公布的2020年度真抓实干成效明显的地区名单。
+              </p>
+              <p>
+                2021年，永州市实现地区生产总值2261.08亿元，同比增长7.5%。
+              </p>
+              <p style="float: left;margin-top: 30px;margin-left: 70px;">
+                <iframe src="//player.bilibili.com/player.html?aid=80370386&bvid=BV19J411s7xa&cid=137542323&page=1"
+                  scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 1 –</h1>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">历史沿革</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">秦汉</h3>
+              <p>
+                秦始皇二十六年（前221年）实行郡县制，设长沙郡，始置零陵县（治今广西壮族自治区桂林市全州县）。
+              </p>
+              <p>
+                西汉汉武帝元朔五年（前124年），封长沙王刘发之子刘贤为泉陵侯，置泉陵侯国（治今永州市零陵区）。
+              </p>
+              <p>
+                汉武帝元鼎六年（前111年），析长沙国，始置零陵郡，隶荆州。零陵、营道、泛道、营浦、始安、洮阳、钟武七县和泉陵、都梁、夫夷、舂陵4侯国。
+              </p>
+              <p>
+                新莽王朝时，零陵郡改名九嶷郡，零陵县治（治今永州市零陵区），隶荆州。
+                东汉光武帝建武元年（25年），复名零陵郡，改泉陵侯国为泉陵县，将零陵郡治所移至泉陵县（治所在今永州市零陵区），隶荆州。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">三国两晋南北朝</h3>
+              <p>
+                三国吴，为零陵郡、泉陵县治（治所在今永州市零陵区）；分营阳郡，营浦治（治所在今道县）。皆隶荆州。
+              </p>
+              <p>
+                西晋及怀帝永嘉元年（307年），为零陵郡，泉陵县治（治所在今永州市零陵区），改隶湘州。
+              </p>
+              <p>
+                东晋安帝义熙十三年（417年），为零陵郡，泉陵县治（治所在今永州零陵区）；分营阳郡，营浦治（治所在今道县），改隶荆州。
+              </p>
+              <p>
+                梁天监十四年（515年），为零陵郡，泉陵县治（治所在今永州市零陵区），分营州永阳郡，营浦治（治所在今道县），改隶湘州。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">隋唐五代十国</h3>
+              <p>
+                隋文帝开皇九年（589年）废零陵郡和永阳郡，置永州总管府，府治泉陵县，同年更名零陵县（治今永州市零陵区），隶湘州。从此，永州、零陵一地两名。
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 2 –</h1>
+              <p>
+                隋炀帝大业三年（607年）又改永州总管府为零陵郡，郡治零陵县（治今永州市零陵区），隶湘州。
+              </p>
+              <p>
+                唐武德四年（621年）废零陵郡，分置永州、营州。武德五年，改营州为南营州。贞观八年（634年），改南营州为道州。贞观十七年（643年），撤道州并入永州。上元二年（675年），复置道州。天宝元年（742年），改永州为永州零陵郡，改道州为道州江华郡，改营道县为宏道县。乾元元年（758年），废郡名，复称永州、道州。广德二年（764年），置湖南观察使，湖南之名自此始，永州、道州属之。
+              </p>
+              <p>
+                五代后唐明宗天成二年（927年），为永州，零陵县治（治所在今永州市零陵区）；分道州，宏道县治（治所在今道县），皆隶江南西道。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">宋元</h3>
+              <p>
+                宋太祖建隆元年（960年），为永州，零陵县治（治所在今永州市零陵区）；分道州，营道县治（治所在今道县），皆隶荆湖南路。
+              </p>
+              <p>
+                元世祖至元十三年（1276年），改永州路，零陵县治（治所在今永州市零陵区）；分道州路，营道县治（治所在今道县），皆隶湖南道宣慰司。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">明清</h3>
+              <p>
+                明洪武元年（1368年），改路为府。永州府治零陵县（治所在今永州市零陵区）、道州府治营道县（治所在今道县），隶属湖广行省。洪武九年（1376年），将道州府降为道州，隶属永州府。同年，改湖广行省为湖广承宣布政使司，永州府属之。
+              </p>
+              <p>
+                清顺治元年（1644年），分湖广承宣布政使司为湖广左承宣布政使司和湖广右承宣布政使司，永州府属湖广右承宣布政使司。康熙三年（1664年），改湖广右承宣布政使司为湖南省，永州府属湖南省衡永郴桂道。零陵县治（治今永州市零陵区）。
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 3 –</h1>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">中华民国</h3>
+              <p>
+                民国二年（1913年），改道州为道县。民国三年（1914年），衡永郴桂道改为衡阳道，永州属衡阳道。民国十一年（1922年），湖南省撤销道，仅存省、县二级。民国二十六年（1937年），湖南省划分行政督察区，永州各县属第九行政督察区，行政督察专员公署驻零陵县。民国二十九年（1940年），湖南省调整行政督察区，原第九行政督察区所属各县改属第七行政督察区。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">中华人民共和国</h3>
+              <p>
+                1949年10~11月，永州地区各县先后被中国人民解放军攻克或实现和平政权更迭，设永州专区，翌年称零陵专区。
+              </p>
+              <p>
+                1952年，零陵、衡阳、郴县三专区合并为湘南行政区，并在祁阳县东部析置祁东县。
+              </p>
+              <p>
+                1954年，湘南行政区撤销，原零陵专区所属各县，除新田县划归郴县专区外，其余县全部划归衡阳专区。
+              </p>
+              <p>
+                1955年11月，江华县实行民族区域自治，改称江华瑶族自治县。1956年3月，永明县更名江永县。
+              </p>
+              <p>
+                1959年3月，新田县并入桂阳县。
+              </p>
+              <p>
+                1961年7月，恢复新田县。
+              </p>
+              <p>
+                1960年6月，零陵县冷水滩镇升格为县级冷水滩市。
+              </p>
+              <p>
+                1962年10月，撤销冷水滩市，改为冷水滩区，仍属零陵县管辖。
+              </p>
+              <p>
+                1962年12月，恢复零陵专区，专署仍设零陵县芝城镇。原属衡阳专区的零陵县、江永县、道县、宁远县、东安县及江华瑶族自治县和郴州专区所属蓝山县、新田县2个县划入零陵专区。原零陵专区的祁阳县、祁东县2个县划归衡阳专区。
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 4 –</h1>
+              <p>
+                1995年11月，撤销零陵地区和县级永州市、冷水滩市，设立地级永州市，永州市人民政府驻新设立的芝山区（即现零陵区）。此时，地级永州市辖祁阳县、新田县、道县、蓝山县、东安县、双牌县、宁远县、江永县、江华瑶族自治县和芝山区、冷水滩区。地级永州市政府原设零陵区潇水中路106号，1997年7月迁治冷水滩区逸云路1号。
+              </p>
+              <p>
+                <img src="img/renwen.jpg" alt="人文地图" style="width:300px;height: 450px;margin: 15px 0 0 70px;">
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 5 –</h1>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">行政区划</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">区划沿革</h3>
+              <p>
+                1964年5月，划零陵县、道县的12个公社和9个国营林场，设置潇水林区管理局。
+              </p>
+              <p>
+                1968年，零陵专区更名零陵地区。
+              </p>
+              <p>
+                1969年12月16日，经国务院批准，撤销潇水林区管理局，设立双牌县。
+              </p>
+              <p>
+                1979年3月，零陵县驻地东风镇改名永州镇，由零陵地区直接领导。
+              </p>
+              <p>
+                1982年1月，经国务院批准，析零陵地区直属的永州镇以及周边乡镇设立县级永州市。
+              </p>
+              <p>
+                1983年2月，祁阳县划归零陵地区管辖。
+              </p>
+              <p>
+                1984年6月，撤销零陵县，析北部乡镇设立县级冷水滩市，南部乡镇并入县级永州市。
+              </p>
+              <p>
+                2000年5月，国务院正式批复将永州市人民政府驻地迁往冷水滩区。
+              </p>
+              <p>
+                2005年6月，永州市芝山区复名零陵区，行政区域不变，区政府驻地不变。
+              </p>
+              <p>
+                2021年1月20日，经国务院批准，民政部批复同意撤销祁阳县，设立县级祁阳市。由湖南省直辖，永州市代管。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">区划现况</h3>
+              <p>
+                截至2021年2月，永州下辖零陵区、冷水滩区、祁阳市、双牌县、东安县、道县、宁远县、新田县、蓝山县、江永县、江华瑶族自治县等2区1市8县，另设有回龙圩、金洞2个管理区。永州市政府驻冷水滩区逸云路1号。
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 6 –</h1>
+              <table>
+                <tbody>
+                  <tr>
+                    <th width="156">
+                      <div>地 名</div>
+                    </th>
+                    <th width="121">
+                      <div>驻地</div>
+                    </th>
+                    <th width="138">
+                      <div>人口（万人）</div>
+                    </th>
+                    <th width="173">
+                      <div>面积（平方千米）</div>
+                    </th>
+                    <th width="139">
+                      <div>行政区划代码</div>
+                    </th>
+                    <th width="75">
+                      <div>区号</div>
+                    </th>
+                    <th width="94">
+                      <div>邮编</div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>永州市</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>冷水滩区</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>631</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>22259</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431100</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>冷水滩区</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>梧桐街道</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>55</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>1217</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431103</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425100</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>零陵区</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>徐家井街道</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>61</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>1964</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431102</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425100</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>祁阳市</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>长虹街道</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>106</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>2538</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431121</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>426100</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>东安县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>白牙市镇</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>63</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>2204</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div >431122</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div >425900</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>双牌县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>泷泊镇</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>18</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>1726</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431123</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425200</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>道县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>濂溪街道</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>83</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>2448</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431124</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425300</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>江永县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>潇浦镇</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>27</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>1629</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431125</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425400</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>宁远县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>舜陵街道</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>85</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>2501</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431126</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425600</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>蓝山县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>塔峰镇</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>40</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>1798</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431127</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425800</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>新田县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div>龙泉镇</div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>42</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>1000</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431128</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425700</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" align="left" width="156">
+                      <div>江华瑶族自治县</div>
+                    </td>
+                    <td valign="top" align="left" width="121">
+                      <div><a target="_blank"
+                          href="https://baike.baidu.com/item/%E6%B2%B1%E6%B1%9F%E9%95%87/33494"
+                          data-lemmaid="33494">沱江镇</a></div>
+                    </td>
+                    <td valign="top" align="left" width="138">
+                      <div>51</div>
+                    </td>
+                    <td valign="top" align="left" width="173">
+                      <div>3234</div>
+                    </td>
+                    <td valign="top" align="left" width="139">
+                      <div>431129</div>
+                    </td>
+                    <td valign="top" align="left" width="75">
+                      <div>0746</div>
+                    </td>
+                    <td valign="top" align="left" width="94">
+                      <div>425500</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">地理环境</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">位置境域</h3>
+              <p>
+                永州东连郴州市，南界广东省清远市、广西壮族自治区贺州市，西接广西壮族自治区桂林市，北邻衡阳市、邵阳市。湘江经西向东穿越零祁盆地，潇水自南至北纵贯全境。地理坐标介于北纬24°39′至26°51′，东经111°06′至112°21’之
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 7 –</h1>
+              间，南北相距最长245公里，东西相间最宽144公里，土地总面积2.24万平方公里。
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">气候</h3>
+              <p>
+                永州市属中亚热带大陆性季风湿润气候区，一年四季比较分明。年均气温为17.6～18.6℃，无霜期286～311天，日最低气温0℃以下的天数只有8～15天。多年平均降雪日数为3～7天，极端最低气温在－4.9～－8.4℃之间。日平均气温≥0℃的积温达6450—6800℃，≥10℃的积温为5530～5860℃。多年平均日照时数为1300—1740小时，太阳总辐射量达101.5～113千卡∕平方厘米。多年平均降水量1200～1900毫米，一般是山区多于平岗区，南部多于北部。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">地形地貌</h3>
+              <p>
+                永州市位于湖南省南部三面环山、向东北开口的马蹄形盆地的南缘。境内地貌复杂多样，河川溪涧纵横交错，山岗盆地相间分布。永州山地面积大，主要山脉有越城岭-四明山系、都庞岭-阳明山系和萌渚岭-九疑山系。
+              </p>
+              <p>
+                永州市地形基本特征，由上述三个山系将永州分隔成南北两大相对独立的部分。在三大山系及其支脉的围夹下，构成零祁盆地、道江盆地两个半封闭型的山间盆地：
+              </p>
+              <p>
+                位于北部的零祁盆地，面积达855.4万亩，盆地内地势低平开阔，耕地连片延伸；盆地周围由北面的四明山、西北的越城岭、南面的紫金山、东南面的阳明山相环绕，东北向衡阳盆地敞口。南部道江盆地，面积1024.27万亩，盆地内丘岗起伏，耕地连片；盆地东面向郴州、永兴盆地开口，西南成狭长谷地向江永、江华南部延伸，形成串通湖广的交通走廊；盆地外周由北面的阳明山、西北的紫金山、西面的都庞岭、南面的萌渚岭-九疑山围隔而成。
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 8 –</h1>
+              <p>
+                永州西南高，东北及中部低，地表切割强烈，以三大山系为脊线，呈环带状、阶梯式向两大盆地中心倾降。从中国地形看，永州位于由西向东倾降的第二阶梯与第三阶梯的交接地带，是南岭山地向洞庭湖平原过渡的初始阶段。西北、西、西南三大山系，山体巍峨蜿蜒，山峰高达千米以上。都庞岭的峰顶韭菜岭，海拔2009.3米，是境内最高点。东北及中部，丘岗星罗棋布，谷盆相嵌，海拔一般在300米以下。湘江河谷祁阳唐家岭的九洲，海拔63米，是境内最低点。全域相对高差1946.3米，比降达2.7～20%，切割深一般为300~700米，最深达800~1000米。
+              </p>
+              <p>
+                永州市地貌类型复杂，以丘岗山地为主。永州地貌类型发育，在历次构造运动、岩浆侵入以及地表水的长期风化剥蚀下，形成了以山丘地为主体，丘、岗、平俱全的复杂多样的地貌类型。全域有中山、中低山、低山总面积11044.53平方公里，占永州市总面积的49.5%。丘陵3242平方公里，岗地3979平方公里，平原3191平方公里，水面880平方公里，分别占总面积的14.5%、17.81%、14.29%和3.94%。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">水文</h3>
+              <p>
+                永州市共有大小河流733条，总长10515公里。境内河流受地形地貌及构造断裂带的控制，大都呈由南向北或自西向东的走向，并分为三个水系：一是湘江水系，包括境内主要河流，流域面积21464平方公里，占永州市总面积的96.09%。二是珠江水系，主要是江永桃川、江华河路口一带及蓝山的一部分小河，流域面积为77.8平方公里。三是资江水系，只有东安南桥、大盛部分地方的小河属之，流域面积101.3平方公里。永州主要河流有湘江、潇水、宁远河、泠江、白水、祁水、舂陵水、永明河等。
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 9 –</h1>
+              <p>
+                永州境内的水系主要有以下三个特征：一是河流纵横，呈树枝状分布。绝大多数河流从西北、中部、南部三大山系发源，穿山绕岭，逐级汇流，形成树枝状流域网，汇集于潇湘二水，最后从零祁盆地东北口流出，注入洞庭湖。二是河流水量大，易涨易涸。永州河流总水量占湖南省河流年均总水量的11.1%。其水源主要靠自然降水，因而年内各季的水位变化大。春末夏初的暴雨期，各河流会出现短期洪汛，水位差在5～18米，径流量超过正常值的几倍甚至几十倍。而秋冬枯旱时，河流就会涸浅，有的甚至会断流。三是河床坡降大，谷深流急。南岭山地相对高差大，地势比降达2.7～20%。穿越这里的河流下切，河道窄而切割深，水流湍急，落差集中。
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">自然资源</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">土地资源</h3>
+              <p>
+                截至2016年底，永州市有近500万亩山地、200多万千瓦的水能资源和3000多万立方米木材等可供开发利用，宜农荒地是全省数量多、质量好的地区之一。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">动物资源</h3>
+              <p>
+                永州市野生动物有1000余种，列为国家保护的有31种：属国家一级保护的有华南虎、黄腹角雉；属国家二级濒危保护动物五步蛇、猕猴、穿山甲、金钱豹、麝、红腹角雉、毛冠鹿、水鹿、大鲵、红石猴、灰腹角雉等10种；三级保护的有獐、青羊、苏门羚、白鹇、金鸡等19种。已知水产动物有186种，其中鱼类有153种。主要经济鱼类有草、青、鲢、鳙、鲤等20余种；稀有珍贵鱼类有中华鲟、竹鱼等；水产两栖动物有大鲵等16种；水产爬行动物主要有鳖、团鱼、乌龟等；珍贵水产兽类有华东水獭.
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 10 –</h1>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">植物资源</h3>
+              <p>
+                永州市属中亚热带常绿阔叶林区，系湖南省植物资源富集地区。全境共有维管束植物232科、1003属、2712种，占全省的68%，为中国的10%；有乔木树种127科、429属、1542种。其中有栽培价值的58科、253种，有实用推广价值的180种。属国家一级保护的6种：银杉、水杉、珙桐、香杉、伯乐树、苏铁；属国家二级保护的13种：楠木、银杏、冷杉、中华珈、长柄双花木、香树、红豆树、白豆松等；属国家三级保护的有杜仲、鹅掌楸、福建柏、华南栲、青钱柳、檫木、黄杉等27种；属省级保护的有斑竹、方竹、罗汉竹、绒毛皂荚、山羊角树、黄连、党参、天麻等29种。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">矿产资源</h3>
+              <p>
+                永州市地处南岭有色金属成矿带中部，境内地层出露较齐全，构造发育、岩浆活动强烈，成矿条件较好，矿产资源比较丰富。截至2012年底，中国168个矿种在永州市发现的达65种，其中已探明储量的或具有一定规模的矿种有40种，锰、稀土、铷、锂保有储量居全省第一位，有30种纳入矿产资源储量平衡表，上表矿产的潜在价值为330亿元，未上表矿产的潜在价值988亿元。优势矿种有锰、稀土、铷、锂、铅、锌、锡、锑等，全市已发现矿产地653处，通过地质工作达到工业矿床要求的有109处，其中大型矿床9处，中型矿床23处，小型矿床77处。其中能源矿产的煤炭资源我市经勘查有12个矿区，有色金属、黑色金属矿产经勘查现有15个矿区，北五县区以锰、煤、锑矿为主，南六县区以钨、锡、铜、铅、锌、锰、铁为主。.
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 11 –</h1>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">人口民族</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">人口</h3>
+              <p>
+                2018年，永州市常住人口545.21万人。其中，城镇人口270.91万人，城镇化率49.69%，比上年末提高1.4个百分点。全年出生人口6.1万人，出生率11.19‰；死亡人口4.06万人，死亡率7.45‰；人口自然增长率3.74‰。.1%。其水源主要靠自然降水，因而年内各季的水位变化大。春末夏初的暴雨期，各河流会出现短期洪汛，水位差在5～18米，径流量超过正常值的几倍甚至几十倍。而秋冬枯旱时，河流就会涸浅，有的甚至会断流。三是河床坡降大，谷深流急。南岭山地相对高差大，地势比降达2.7～20%。穿越这里的河流下切，河道窄而切割深，水流湍急，落差集中。
+              </p>
+              <p>
+                根据第七次人口普查数据，永州市常住人口为5289824人。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">民族</h3>
+              <p>
+                永州市是一个多民族地区，除汉族以外，有瑶、壮等48个少数民族，少数民族人口63.0867万，占全市总人口10%。.
+              </p>
+              <p>
+                <ul >
+                  <li style="color: rgb(55, 55, 160);font: 16px/24px 'Microsoft YaHei';">
+                    <div>市委</div>
+                  </li>
+                </ul>
+                <div><b>朱洪武</b>&nbsp;&nbsp;市委书记</div>
+                <div><a href="https://baike.baidu.com/item/%E9%99%88%E7%88%B1%E6%9E%97/67344" >陈爱林</a> &nbsp;市委副书记、市长</div>
+                <div>单铸飞&nbsp;&nbsp;市委副书记、市委统战部部长、市委党校（行政学院、社会主义学院）校（院）长</div>
+                <div>侯文&nbsp;&nbsp;市委常委、副市长</div>
+                <div>陈刚&nbsp;&nbsp;市委常委、纪委书记、监委主任</div>
+                <div>周玉梅&nbsp;&nbsp;市委常委、组织部部长</div>
+                <div>钟君&nbsp;&nbsp;市委常委、宣传部部长</div>
+                <div>张嘉庆&nbsp;&nbsp;市委常委、永州军分区政委</div>
+                <div>何恩广&nbsp;&nbsp;市委常委、市人民政府党组成员</div>
+                <div>张建坤&nbsp;&nbsp;市委常委、政法委书记、双牌县委书记</div>
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 12 –</h1>
+              <div>刘玲军&nbsp;&nbsp;市委常委、市委秘书长</div>
+              <p>
+                <ul >
+                  <li style="color: rgb(55, 55, 160);font: 16px/24px 'Microsoft YaHei';">
+                    <div>人大</div>
+                  </li>
+                </ul>
+                <div>市人大常委会党组书记、代理主任：王雄</div>
+                <div>市人大常委会副主任：周小驹</div>
+                <div>市人大常委会副主任：袁火林</div>
+                <div>市人大常委会副主任：周益志</div>
+                <div>市人大常委会副主任：李农妹</div>
+                <div>市人大常委会副主任：胡先荣</div>
+                <div>市人大常委会副主任：艾艳君</div>
+              </p>
+              <p>
+                <ul >
+                  <li style="color: rgb(55, 55, 160);font: 16px/24px 'Microsoft YaHei';">
+                    <div>政府</div>
+                  </li>
+                </ul>
+                <div>陈爱林&nbsp;&nbsp;市委副书记、市长</div>
+                <div>侯文&nbsp;&nbsp;市委常委、副市长</div>
+                <div>严兴德&nbsp;&nbsp;永州市人民政府副市长</div>
+                <div>谢景林&nbsp;&nbsp;永州市人民政府副市长</div>
+                <div>李旦梅（女）&nbsp;&nbsp;永州市人民政府副市长</div>
+                <div>刘卫华&nbsp;&nbsp;永州市人民政府副市长</div>
+                <div>车丽华&nbsp;&nbsp;副市长、市公安局局长</div>
+              </p>
+              <p>
+                <ul >
+                  <li style="color: rgb(55, 55, 160);font: 16px/24px 'Microsoft YaHei';">
+                    <div>政协</div>
+                  </li>
+                </ul>
+                <div>政协主席：蒋善生</div>
+                <div>政协副主席：吕斌</div>
+                <div>政协副主席：杨军元</div>
+                <div>政协副主席：文绍涛</div>
+                <div>政协副主席：宋可福</div>
+                <div>政协副主席：潘衡湘</div>
+                <div>政协副主席：欧阳德群</div>
+                <div>政协副主席：何冲龙</div>
+                <div>政协副主席：魏秋云</div>
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 13 –</h1>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">经济</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">综述</h3>
+              <p>
+                2018年，永州市实现地区生产总值1805.65亿元、比上年增长7.8%，其中，第一产业增加值295.70亿元、增长3.4%；第二产业增加值608.30亿元、增长7.2%；第三产业增加值901.65亿元、增长10.0%。按常住人口计算，全市人均地区生产总值33035元、同比增长7.9%。三次产业结构比重由上年的17.4:34.6:48.0调整为16.4：33.7：49.9，第三产业比重提高1.9个百分点。第一、二、三次产业对全市经济增长的贡献率分别为7.8%、33.2%、59.0%，分别拉动全市GDP增长0.6、2.6、4.6个百分点。非公有制经济增加值1031.34亿元、增长8.5%，占地区生产总值的比重为57.1%。
+              </p>
+              <p>
+                2018年，永州市一般公共预算收入183.29亿元，比上年增长8.3%，其中地方收入118.10亿元、增长8.0%。地方收入中，税收收入79.95亿元、增长12.3%；非税收入38.15亿元、下降0.1%。上划中央“两税”35.42亿元、增长10.4%；上划中央所得税17.64亿元、增长8.5%。一般公共预算支出460.81亿元、增长6.7%。其中，社会保障和就业支出75.18亿元、增长7.2%；城乡社区事务支出17.8亿元、增长12.4%；科学技术支出5.22亿元、增长24.0%；住房保障支出21.2亿元、下降8.9%。
+              </p>
+              <p>
+                2018年，永州市固定资产投资比上年增长9.5%。其中，民间投资增长21.3%。分经济类型看，国有投资增长1.1%，非国有投资增长17.3%。分投资方向看，民生投资增长10.5%，生态投资增长4.6%，基础设施投资增长7.2%，高新技术产业投资增长71.5%，工业技改投资增长39.6%。施工项目个数比上年增长40.2%。其中，本年新开工项目增长12.3%。本年投产项目个数增长55.5%。
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 14 –</h1>
+              <p>
+                2018年，永州市进出口总额139.75亿元、比上年增长41.4%。其中，出口124.45亿元、增长44.2%；进口5.3亿元、下降2.7%。分贸易方式看，一般贸易出口97.99亿元、增长62.1%；加工贸易出口26.42亿元、增长2.4%。出口商品中，鞋类14.34亿元、下降0.6%；服装及衣着附件出口7.96亿元、增长22.8%；钢材出口3.79亿元、增长218.2%；箱包及类似容器3.25亿元、增长130.6%；灯具、照明装置及零件出口2.62亿元、增长25.1%。分产销国别（地区）看，出口香港30.65亿元、增长300.1%；出口美国21.48亿元、下降1.7%；出口东盟21亿元，增长36.3%；出口欧盟（28国）18.252亿元，增长22.8%。
+              </p>
+              <p>
+                2018年，永州市新批外商投资项目15个，实际使用外商直接投资12.12亿美元、比上年增长12.1%。其中，第一产业1.58亿美元、增长2.3%；第二产业7.31亿美元、下降12.1%；第三产业3.24亿美元、增长237%。新批境内省外项目197个，实际到位境内省外资金314.84亿元、增长17.5%。其中，第一产业51.55亿元，增长3.1%；第二产业149.85亿元、增长23.1%；第三产业113.44亿元、增长18.31%。引进2亿元以上境内省外项目119个，增长25.3%；实际到位资金166.67亿元、增长20.5%。
+              </p>
+              <p>
+                2018年，永州市全市全体居民人均可支配收入20163元、比上年增长9.8%。城镇居民人均可支配收入28470元、增长8.7%。农村居民人均可支配收入13924元、增长9.3%。城乡居民收入比由上年的2.06:1缩小为2.04:1。全市居民人均消费支出15406元、比上年增长9.5%。城镇居民人均消费支出19445元、增长10.8%；农村居民人均生活消费支出12519元、增长8.4%。城镇居民家庭恩格尔系数为30.8%，农村居民家庭恩格尔系数为32.3%。
+              </p>
+              <p>
+                2020年永州市实现地区生产总值2107.70亿元，增长3.9%.
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 15 –</h1>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">第一产业</h3>
+              <p>
+                2018年，永州市完成农林牧渔业总产值552.93亿元、比上年增长3.6%；实现增加值309.39亿元、比上年增长3.7%。其中，农业实现增加值164.03亿元、增长3.1%，林业增加值45.76亿元、增长8%，牧业增加值61.16亿元、增长0.7%，渔业增加值24.74亿元、增长5.0%。全年粮食种植面积757.62万亩、增长0.5%，产量305.86万吨、增长1.0%；蔬菜种植面积273.37万亩、增长5.1%，产量578.27万吨、增长5.0%；油料种植面积131.67万亩、增长1.6%，产量16.22万吨、增长2.6%；烤烟种植面积26.72万亩、下降10.1%，产量4.03万吨、下降8.6%。全年出栏生猪723.66万头、下降0.3%，出栏牛27.15万头、增长3.4%，出栏羊95.61万头、增长2.1%。猪、牛、羊肉产量58.89万吨、增长1.9%，禽蛋产量5.69万吨、增长2.7%，水产品产量20.27万吨、增长3.9%。
+              </p>
+              <p>
+                2018年，永州市新增农田有效灌溉面积0.11千公顷，新增节水灌溉面积2.17千公顷；开工各类水利工程3.25万处，投入资金30亿元，完成水利工程土石方0.3亿立方米。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">第二产业</h3>
+              <p>
+                2018年，永州市全部工业增加值499.92亿元、比上年增长7.6%。其中，规模以上工业增加值增长7.7%。在规模以上工业中，非公有制企业增加值增长8.8%，占规模以上工业的比重为85.0%。高加工度工业和高技术产业增加值分别增长6.3%和25.9%。省级及以上产业园区工业增加值增长8.0%。按经济类型分，国有企业增长5.5%，集体企业下降9.8%, 股份制企业增长8.0%，外商及港澳台商投资企业增长7.2%。
+              </p>
+              <p>
+                2018年永州市，规模以上工业统计的产品中，大米137.9万吨、增长24.5%；饲料65.6万吨、下降2.2%；水泥1242.5万吨、增长12.2%；生铁27.1万
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 16 –</h1>
+              吨、增长122.1%；十种有色金属3.7万吨、下降41.3%；汽车2.2万辆、下降68.1%，发电量87.36亿千瓦时、增长24%。
+              <p>
+                2018年，永州市全市规模工业企业主营业务收入1479.25亿元、增长8.8%；实现利润60.23亿元、增长29.0%，其中亏损企业亏损额2.21亿元、下降22.8%，亏损面3.2%、比上年提高0.2个百分点；工业产品销售率100.5%，比上年提高2.2个百分点；出口交货值52.1亿元、增长18.4%。年末规模以上工业企业资产负债率为41.1%。
+              </p>
+              <p>
+                2018年，永州市全社会建筑业增加值109.08亿元、比上年增长4.8%。具有资质等级的总承包和专业承包建筑企业实现利润总额11.22亿元，增长36.3%。房屋建筑施工面积2200.92万平方米、增长3.4%。房屋建筑竣工面积1559.25万平方米、增长0.6%。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">第三产业</h3>
+              <p>
+                2018年，永州市房地产开发投资比上年增长18.8%。商品房销售面积713.12万平方米、增长10.4%。其中，住宅销售面积619.01万平方米、增长13.4%。商品房销售额315.02亿元，增长28.8%。其中，住宅销售额263.97亿元，增长38.5%。年末商品房待售面积81.89万平方米、下降7.2%。
+              </p>
+              <p>
+                2018年，永州市全年社会消费品零售总额719.55亿元、比上年增长10.2%。分经营地看，城镇消费品零售总额597.8亿元、增长10.6%；乡村消费品零售总额121.75亿元、增长8.3%。限额以上法人批发和零售业商品零售额217.9亿元、比上年增长16.9%。分商品类别看，粮油、食品类零售额增长23.7%，服装、鞋帽、针纺织品类增长24.3%，家用电器和音像器材类增长17.2%，家具类增长36.2%，石油及制品类增长12%，建筑及装潢材料类增长35.7%，汽车类增长13%。居民消费价格比上年上涨1.5%。商品零售价格上涨1.4%。工业生产者出厂价格上涨3.2%，工业生产者购进价格上涨3.5%。
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 17 –</h1>
+              <p>
+                2018年，永州市客货运输换算周转量187.24亿吨公里、比上年增长2.4%。货物周转量182.69亿吨公里、增长3.9%。其中，公路周转量180.8亿吨公里、增长3.9%；水运周转量1.89亿吨公里、增长0.1%。旅客周转量43.99亿人公里、下降11.9%。其中，公路周转量43.62亿人公里、下降12.0%；水运周转量0.37亿人公里、下降1.1%。邮政业务总量（2010年不变价）7.26亿元、比上年增长19.7%；电信业务总量（2015年不变价）136.99亿元、增长172.6%。年末固定电话用户21.68万户、下降20.7%；移动电话用户397.13万户、增长11.2 %。年末互联网宽带用户101.44万户、增长28.4%。
+              </p>
+              <p>
+                2018年，永州市金融机构本外币各项存款余额2268.30亿元、比上年末增长0.9%。其中，住户存款余额1572.26亿元、增长10.3%；非金融企业存款余额348.71亿元、下降16.3%。本外币各项贷款余额1353.53亿元、增长14.0%。其中，住户贷款余额737.81亿元、增长15.2%；非金融企业及机关团体贷款余额615.68亿元、增长12.5%。保险公司原保险保费收入57.69亿元、比上年增长4.5%。其中，寿险保费收入38.33亿元、增长4.0%；健康险保费收入4.7亿元、增长87.3%；人身意外伤害险保费收入0.81亿元、下降6.9%；财产险保费收入19.36亿元、增长5.6%。原保险赔付支出20.26亿元、增长13.6%。
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">社会事业</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">科学技术</h3>
+              <p>
+                2016年，永州市21家企业获得国家高新技术企业审批认定，创近年来历史新高，累计达48家。省级工程研究中心2个，科技成果登记数14项，获得省级科技进步奖1项，获得省级技术发明奖1项。签订技术合同22项，成交金额0.4亿元。全年专利申请量3162件、增长32.5%，其中发明专利申请量1188件、增长67.3%；专利授权量1126件、增长4.7%，其中发明专利授权量103件、下降7.2%。工矿企业、大专院校和科研单位专利申请量分别为493件、111件和5
+              </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 18 –</h1>
+              件，工矿企业、大专院校专利授权量分别为292件和33件。
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">教育事业</h3>
+              <p>
+                2018年，永州市中等职业教育毕业生1.63万人，普通高中毕业生2.78万人，初中学校毕业生6.94万人，普通小学毕业生8.76万人。在园幼儿21.75万人。各类民办学校1987所，在校学生31.7万人。发放中职国家助学金0.19亿元，资助中职学生1.85万人次；落实中职免学费资金1.32亿元，资助中职学生11.04万人次。发放普通高中国家助学金0.40亿元。全市省级工程技术研究中心5个，省级重点实验室1个。签订技术合同6044项，技术合同成交金额281.7亿元。登记科技成果18项。专利申请量3605件、比上年增长28.3%。其中，发明专利申请量1224件、增长18.6%。专利授权量1615件、增长29.6%。高新技术产业增加值356.59亿元、增长21.3%。.4亿元。全年专利申请量3162件、增长32.5%，其中发明专利申请量1188件、增长67.3%；专利授权量1126件、增长4.7%，其中发明专利授权量103件、下降7.2%。工矿企业、大专院校和科研单位专利申请量分别为493件、111件和5件，
+              </p>
+              <p>
+                <table border="1px solid #ccc" >
+                  <tbody>
+                    <tr>
+                      <td colspan="5" align="center">
+                        <div><b>永州市大学名单</b></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="180">
+                        <div><b>学校名称</b></div>
+                      </td>
+                      <td align="center" width="140">
+                        <div><b>主管部门</b></div>
+                      </td>
+                      <td align="center" width="160">
+                        <di><b>所在地</b></div>
+                      </td>
+                      <td align="center" width="160">
+                        <di><b>办学层次</b></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="180">
+                        <di><a target="_blank"
+                            href="https://baike.baidu.com/item/%E6%B9%96%E5%8D%97%E7%A7%91%E6%8A%80%E5%AD%A6%E9%99%A2/335482"
+                            data-lemmaid="335482">湖南科技学院</a></div>
+                      </td>
+                      <td align="center" width="140">
+                        <di>湖南省</div>
+                      </td>
+                      <td align="center" width="160">
+                        <di>永州市</div>
+                      </td>
+                      <td align="center" width="160">
+                        <di>本科</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="180">
+                        <di><a target="_blank"
+                            href="https://baike.baidu.com/item/%E6%B9%96%E5%8D%97%E4%B9%9D%E5%B6%B7%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2/289442"
+                            data-lemmaid="289442">湖南九嶷职业技术学院</a></div>
+                      </td>
+                      <td align="center" width="140">
+                        <di>湖南省</div>
+                      </td>
+                      <td align="center" width="160">
+                        <di>永州市</div>
+                      </td>
+                      <td align="center" width="160">
+                        <di>专科</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" width="180">
+                        <di><a target="_blank"
+                            href="https://baike.baidu.com/item/%E6%B0%B8%E5%B7%9E%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2/3752208"
+                            data-lemmaid="3752208">永州职业技术学院</a></div>
+                      </td>
+                      <td align="center" width="140">
+                        <div>湖南省</div>
+                      </td>
+                      <td align="center" width="160">
+                        <div>永州市</div>
+                      </td>
+                      <td align="center" width="160">
+                        <div>专科</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">文化事业</h3>
+              <p>
+                2018年，永州市共有艺术表演团体660个，群众艺术馆、文化馆12个，公共图书馆12个，博物馆、纪念馆6个。广播电台2座，电视台10座。有线电视用户5.7万户。广播综合人口覆盖率100%；电视综合人口覆盖率99.15%。国家级非
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 19 –</h1>
+              物质文化遗产保护目录7个，省级非物质文化遗产保护目录18个。出版期刊1种、报纸2种，期刊、报纸出版总印数分别为0.5万册、5.58万份。
+              <p>
+              <div><b>国家一级图书馆：</b>
+              <a href="https://baike.baidu.com/item/%E7%A5%81%E9%98%B3%E9%99%B6%E9%93%B8%E5%9B%BE%E4%B9%A6%E9%A6%86/12711164">祁阳陶铸图书馆</a>
+              <a href="https://baike.baidu.com/item/%E5%AE%81%E8%BF%9C%E5%8E%BF%E5%9B%BE%E4%B9%A6%E9%A6%86/3674731">、宁远县图书馆</a>
+              </div>
+             </p> 
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">医疗卫生</h3>
+             <p>
+              2018年，永州市共有卫生机构5658个。其中，医院145个，妇幼保健院（所、站）12个，专科疾病防治院（所、站）2个，社区卫生服务中心（站）39个，诊所、卫生所、医务室666个，村卫生室4508个。卫生技术人员3.22万人、比上年增长8.3%。其中，执业医师和执业助理医师1.37万人，增长9.5%；注册护士1.29万人、增长7.3%。医院拥有床位2.86万张、增长9.9%；乡镇卫生院拥有床位0.97万张、增长9.2%。
+             </p>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">体育事业</h3>
+             <p>
+              2018年，永州市经常参加体育锻炼人数305万人，开展全民健身项目43项次。新建农民体育健身工程的行政村200个。全年获得7个世界冠军、22个亚洲冠军和84个全国冠军。全市共有体育馆8座，运动场436个，游泳池22个，各种训练房184个。.22万人、比上年增长8.3%。其中，执业医师和执业助理医师1.37万人，增长9.5%；注册护士1.29万人、增长7.3%。医院拥有床位2.86万张、增长9.9%；乡镇卫生院拥有床位0.97万张、增长9.2%。
+             </p>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">旅游事业</h3>
+             <p>
+              2018年，永州市国内游客5682.96万人次、比上年增长14.1%；入境游客6.01万人次、增长41.0%。旅游总收入484.64亿元、增长19.2%。其中，国内旅游收入483.56亿元、增长19.1%；国际旅游收入0.16亿美元、增长51.6%。 [1]  永州市桐子坳景区和永州市江永勾蓝瑶寨景区成为国家AAAA级旅游景区。.22万人、比上年增长8.3%。其中，执业医师和执业助理医师1.37万人，增长9.5%；注册护士1.29万人、增长7.3%。医院拥有床位2.86万张、增长9.9%；乡镇卫生院拥有床位0.97万张、增长9.2%。
+             </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 20 –</h1>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">社会保障</h3>
+             <p>
+              2018年，永州市全年新增城镇就业人员6.63万人。年末参加城镇职工基本养老保险人数57.75万人，比上年末增长6.2%。其中，参保职工36.92万人，参保离退休人员20.83万人。参加失业保险职工人数31.19万人；参加工伤保险职工人数34.1万人。年末领取失业保险金职工人数0.33万人。获得政府最低生活保障的城镇居民4.63万人，发放最低生活保障经费2亿元；获得政府最低生活保障的农村居民10.77万人，发放最低生活保障经费2.18亿元。
+             </p>
+             <p>
+              2018年，永州市各类收养性社会福利单位床位4088张，收养各类人员1347人。城镇建立各种社区服务设施346个，综合性社区服务中心2796个。全年销售社会福利彩票5.3亿元，筹集福彩公益金1.59亿元。圆满完成19件重点民生实事任务。其中，完成农村危房改造1.35万户，城镇棚户区改造2.36万套，黑臭水体整治14个。
+             </p>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">环境和安全生产</h3>
+             <p>
+              2018年，永州市全市达到或优于III类标准的水质断面比重为100%。初步核算，全年全市规模工业综合能源消费量192.42万吨标准煤、比上年增长10.3%。其中，六大高耗能行业综合能源消费量164.05万吨标准煤、增长15.3%。
+             </p>
+             <p>
+              2018年，永州市全市全年发生各类生产经营性安全事故38起，生产经营性安全事故死亡人数45人。亿元地区生产总值事故死亡人数0.02人。全年发生道路交通事故（不含简易程序处理的事故）175起；道路交通死亡率1.03人/万辆。
+             </p>
+             <h2 style="font: 22px/24px 'Microsoft YaHei';">交通运输</h2>
+              <p>
+                2016年，永州市货运量6275万吨、同比增长4.5%，货物周转量160.22亿吨公里、增长8.4%；客运量9176万人、增长0.1%，旅客周转量54.54亿人公里、下降1%。年末全市民用汽车保有量30.36万辆、增长18.1%，其中私人汽车27.88万辆、增长19.9%，本年新注册汽车5.85万辆、增长21.6%。年末公路通
+              </p>
+            </div>
+            <div class="back">
+              <h1>– 21 –</h1>
+              车里程2.3万公里，其中高速公里491.77公里。新增二级公路53公里，改造农村公路1107.55公里。全市开通昆明—永州—深圳、昆明—永州—上海、永州—海口3条航线。
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">航空</h3>
+              <p>
+                永州境内有民用永州零陵机场，位于永州市岚角山镇，机场距零陵城区最北端、冷水滩城区最南端均为7公里。现已开通至长沙、广州、深圳、昆明、北京、西安、成都、海口、三亚等20个城市的航班。但大多数航班需要在长沙转机。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">铁路</h3>
+              <p>
+                永州地区境内共有两条铁路：洛湛铁路、湘桂铁路，分别连接永州南北和东西的交通，并在永州市区交汇。在市区设有永州站、零陵站、永州东站。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">公路</h3>
+              <p>
+                永州市境内有207国道、322国道、G55二广高速公路、G72泉南高速公路、永连公路都贯穿全境及九条省道在境内纵横交错。永州市区主要有四个客运汽车站，即：永州汽车北站（永州冷水滩汽车站）、永州汽车南站（永州零陵汽车站）、永州汽车西站（永州凤凰园汽车站）、永州长途汽车客运总站（永州怀素汽车站）。
+              </p>
+              <p>
+                2018年末，永州市公路通车里程2.3万公里。其中，高速公路通车里程492公里。年末民用汽车保有量42.35万辆，增长17.5%；私人汽车保有量39.88万辆，增长14.8%；轿车保有量19.62万辆，增长19.6%。
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">历史文化</h2>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">方言</h3>
+             <p>
+              永州方言（北方语系－西南官话）：永州话，即永州方言，为永州市区（零陵区和冷水滩区）所用方言，又叫零陵话，因古零陵县得名近年来也称冷水滩
+             </p>
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 22 –</h1>
+              话。今主要分布于永州市区（零陵区和冷水滩区）及双牌县的北部，以零陵城区为中心。另外永州地区汉语方言还有以白牙市镇为中心的东安话，以浯溪镇为中心的祁阳话，以道江镇为中心的道州话，以舜陵镇为中心的宁远蓝山新田话，以沱江镇为中心的江华江永话。永州地区北部几县区虽在湖南省境内，但却深受西南官话的影响。
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">器具</h3>
+             <p>
+              永州历史悠久。据考古，早在新石器时代晚期，永州人便用方格、圆柱、叶脉纹等各种图形装饰石器、陶器。道县玉蟾岩出土过距今一万二千年的稻谷遗存。舜帝南巡并葬于江南九嶷先后为《礼记》、《楚辞》、《史记》等中国早期经典著作记载。
+             </p>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">著作</h3>
+             <p>
+              唐宋二代是永州文化教育繁荣发达时期，中唐元结两任道州刺史，写下《舂陵行》、《贼退示官吏》等作，卸任后开辟了浯溪碑林。柳宗元谪居永州10年，写下“永州八记”和《捕蛇者说》等名作。受元、柳影响，唐以后大批名人或贬官寓居。北宋周敦颐（道县人）少时悟道于道州月岩，后来著过《太极图说》和《通书》，成为宋明理学创始人。唐代名僧怀素少时出家永州绿天庵，以焦叶代纸习书，成为著名书法家，其《自叙》、《苦笋》等帖对后世书法影响深远。江永县上江圩一带流传世界上的由女性专用的文字女书。
+             </p>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">地区历史</h3>
+             <p>
+              永州在隋朝以前称零陵。零陵得名于舜葬九嶷。《史记、五帝本纪》载，舜“南巡狩，崩于苍梧之野，葬于江南九嶷，是为零陵”。零陵在夏代属荆州之域，春秋战国时属楚国南境，秦时属长沙郡。
+             </p>
+             <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">戏剧</h3>
+             <p>
+              永州是戏曲文化比较发达的地区。自明代起，境内就开始戏剧表演出现。此后，经过长期的发展，形成了富有地方特色大型地方剧种祁剧。与此同时，在永
+             </p>
+            </div>
+            <div class="back">
+              <h1>– 23 –</h1>
+              州境内还有零陵花鼓戏、祁阳小调、木偶戏等地方戏曲。
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">宗教</h3>
+              <p>
+                永州境内居民信仰的宗教主要是佛教、道教、伊斯兰教、天主教、基督教，其中佛教、道教和伊斯兰教对永州的历史、文化、艺术产生过较大的影响。
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">主要特产</h2>
+              <p>
+                永州特产主要有永州血鸭、东安鸡、永州喝螺、永州异蛇酒、油茶、江永“三香”（香米、香柚、香芋）、江华苦茶、道县红瓜子、道州灰鹅、新田薯酒、蓝山黑糊酒、金桔等。
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">名胜古迹</h2>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">国家级风景名胜</h3>
+              <p>
+                国家AAAA级旅游区：永州柳宗元文化旅游区、东安舜皇山国家森林公园、宁远九嶷山舜帝陵景区、祁阳浯溪碑林景区、双牌阳明山旅游区；
+              </p>
+              <p>
+                国家AAA级旅游区：永州萍洲书院、祁阳李家大院、宁远文庙、江永女书生态博物馆、道县周敦颐故里；
+              </p>
+              <p>
+                国家森林公园：宁远九嶷山国家森林公园、双牌阳明山国家森林公园；
+              </p>
+              <p>
+                国家级非物质文化遗产：女书习俗、瑶族长鼓舞、祁剧、祁阳小调、舜帝祭典；
+              </p>
+              <p>
+                国家级自然保护区：湖南永州都庞岭国家级自然保护区、湖南永州阳明山国家级自然保护区。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">国保文物</h3>
+              <p>
+                零陵区：永州柳子庙、永州文庙、永州武庙、涧岩头村周家大院、廻龙塔、朝阳岩石刻、淡岩石刻。
+              </p>
+              <p>
+                冷水滩区：李达故居。
+              </p>
+              <p>
+                东安县：广利桥、东安树德山庄。
+              </p>
+             
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 24 –</h1>
+              <p>
+                祁阳县：龙溪李家大院、浯溪摩崖石刻。
+              </p>
+              <p>
+                道县：道县鬼崽岭遗址、濂溪故里古建筑群、道县玉蟾岩遗址。
+              </p>
+              <p>
+                双牌县：岁圆楼古建筑群。
+              </p>
+              <p>
+                宁远县：宁远文庙、宁远舂陵侯城遗址、宁远泠道故城遗址、云龙坊与王氏虚堂、久安背翰林祠、舜帝庙遗址。
+              </p>
+              <p>
+                新田县：龙家大院。
+              </p>
+              <p>
+                江永县：允山玉井古窑址、上甘棠村古建筑群。
+              </p>
+              <p>
+                江华瑶族自治县：阳华岩摩崖、湘桂古道永州段（江华段）。
+              </p>
+              <h3 style="font: 16px/24px 'Microsoft YaHei';color: rgb(55, 55, 160);margin: 0 0 0 30px;">文化名村</h3>
+              <p>
+                永州市富家桥镇涧岩头村（第三批）、江永县夏层铺镇上甘棠村（第三批）、祁阳县潘市镇龙溪村（第五批）
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">著名人物</h2>
+              <p>
+                柳宗元（773~819），河东人（今山西省永济市）。唐代文学家、哲学家、散文家和思想家、“唐宋八大家”之一，与韩愈共同倡导唐代古文运动，被贬永州（今零陵区），期间，创作了《永州八记》。
+              </p>
+              <p>
+                黄盖（生卒年不详），零陵泉陵县（今零陵区）人。东汉末年名将，历仕孙坚、孙策、孙权三代，是赤壁之战主要功臣之一，以功拜武锋中郎将。
+              </p>
+              <p>
+                怀素（725~785）唐代永州零陵县（今零陵区）人，草书与张旭齐名，称为“狂草”。人称“张颠素狂”或“颠张醉素”。
+              </p>
+              <p>
+                蒋琬（生年不详~246），零陵郡人（系当时零陵郡何处人待考）。与诸葛亮、董允、费祎合称“蜀汉四相”。
+              </p>
+              <p>
+                周敦颐（1017~1073），道州营道（今道县）人，宋代著名思想家、哲学家，被认为是理学的奠基人。
+              </p>
+              
+              
+            </div>
+            <div class="back">
+              <h1>– 25 –</h1>
+              <p>
+                李达（1890~1966），零陵县人。哲学家、教育家，中国共产党创始人之一。
+              </p>
+              <p>
+                陶铸（1908~1969），今祁阳县石洞源人。曾为中国共产党和中华人民共和国主要领导人之一。
+              </p>
+              <p>
+                唐生智（1889~1970），东安县南应乡（今芦洪市镇）大枧塘村人。国民党将领。
+              </p>
+              <p>
+                蒋先云（1902~1927），新田县大坪塘乡大坪塘村人，“黄埔三杰”之首，后被追赠为中将军衔。
+              </p>
+              <p>
+                江华（1907~1999），瑶族，江华县人。曾任最高人民法院院长。
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">友好城市</h2>
+              <p>
+                斯里兰卡 努瓦拉·埃丽亚市（2009年9月11日）
+              </p>
+              <p>
+                马来西亚 巴生市（2012年5月2日）
+              </p>
+              <p>
+                广东省 湛江市（2012年6月18日）
+              </p>
+              <h2 style="font: 22px/24px 'Microsoft YaHei';">城市荣誉</h2>
+              <p>
+                2015年11月25日，永州市被批准为国家森林城市。
+              </p>
+              <p>
+                2015年，永州获评为国家卫生城市。
+              </p>
+              <p>
+                2016年12月16日，国务院同意将永州市列为国家历史文化名城。
+              </p>
+              <p>
+                2019年8月28日，永州入选第四批中央财政支持开展居家和社区养老服务改革试点地区名单。 
+              </p>
+              <p>
+                2019年11月，获得“‘七五’普法中期先进城市”称号。
+              </p>
+              <p>
+                2020年11月，被评为第十届湖南省拥军优属拥政爱民模范城。
+              </p>
+              <p>
+                2020年12月25日，被国家卫生健康委等授予“无偿献血先进省（市）奖”。
+              </p>
+              
+            </div>
+          </section>
+          <section class="page">
+            <div class="front">
+              <h1>– 26 –</h1>
+              <p>
+                2021年1月29日，入选湖南省人民政府公布的2020年度真抓实干成效明显的地区名单。
+              </p>
+              <p>
+                2021年4月，被国家禁毒委命名为首批“全国禁毒示范城市”。
+              </p>
+              <p>
+                2021年5月31日，入选第四批国家公共文化服务体系示范区公示名单。
+              </p>
+              <p>
+                2021年11月，拟通报表扬为“四好农村路”市域示范创建突出单位。
+              </p>
+              <p>
+                2022年2月，入选2021年度国家卫生城市（区）名单。
+              </p>
+                <img src="img/jiuyishan.jpg" alt="九嶷山" style="width: 480px;height: 300px;margin: 30px 0 0 0 ;">
+                <div style="font-size: 12px;margin: 5px 0 0 0;">九嶷山&nbsp;&nbsp;&nbsp;更多图片分享于其他网站</div>
+            </div>
+            <div class="back">
+              <h1>– 27 –</h1>
+                <img src="img/linglinglou.jpg" alt="零陵楼" style="width: 480px;height: 220px;">
+                <div style="font-size: 12px;margin: 5px 0 0 0;">零陵楼&nbsp;&nbsp;&nbsp;更多图片分享于其他网站</div>
+  
+              <img src="img/xianglingshan.jpg" alt="襄陵山" style="width: 480px;height: 220px;margin: 10px 0 0 0 ;">
+              <div style="font-size: 12px;margin: 5px 0 0 0;">襄陵山&nbsp;&nbsp;&nbsp;更多图片分享于其他网站</div>
+  
+              <div style="font-size: 12px;margin: 30px 0 0 0;">本文内容全部为百度百科内容&nbsp;&nbsp;&nbsp;如有侵权，联系删除！</div>
+              
+            </div>
+          </section>
+        </article>
+      </div>
+  
+      <script src="js/jquery.min.js" type="text/javascript"></script>
+      <script>
+        var currentPage = 0;
+  
+        $('.book')
+          .on('click', '.active', nextPage)
+          .on('click', '.flipped', prevPage);
+  
+        $('.book').hammer().on("swipeleft", nextPage);
+        $('.book').hammer().on("swiperight", prevPage);
+  
+        function prevPage() {
+  
+          $('.flipped')
+            .last()
+            .removeClass('flipped')
+            .addClass('active')
+            .siblings('.page')
+            .removeClass('active');
+        }
+  
+        function nextPage() {
+  
+          $('.active')
+            .removeClass('active')
+            .addClass('flipped')
+            .next('.page')
+            .addClass('active')
+            .siblings();
+  
+  
+        }
+      </script>
+    </div>
+</div>
+
+<!--footer  页尾-->
+<div class="footer">
+  <div class="fobox">
+    <div class="youlink">
+      <div class="you">友情链接：</div>
+      <div class="youu">
+        <ul>
+          <li class="yqljft">
+            <div class="am-dropdown am-dropdown-up" data-am-dropdown="">
+              > <a href="http://www.21ytv.com/">永州广电</a>
+            </div>
+          </li>
+          <li class="yqljft">
+            <div class="am-dropdown am-dropdown-up" data-am-dropdown="">
+              > <a href="https://yz.rednet.cn/" target="_blank">红网永州站</a>
+            </div>
+          </li>
+          <li class="yqljft">
+            <div class="am-dropdown am-dropdown-up" data-am-dropdown="">
+              > <a href="http://www.yzcity.gov.cn/">永州市人民政府网</a>
+            </div>
+          </li>
+          <li class="yqljft">
+            <div class="am-dropdown am-dropdown-up" data-am-dropdown="">
+              > <a href="http://ren.bytravel.cn/">博雅人物网</a>
+            </div>
+          </li>
+          <li class="yqljft">
+            <div class="am-dropdown am-dropdown-up" data-am-dropdown="">
+              > <a href="http://www.library.hn.cn/">湖南图书馆</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 版权信息 -->
+  <div class="bobox">
+    <div class="footerbr">
+      <div class="footerbrt">
+        声明：文章内容来源都有说明出处，附有链接，如有侵权，请联系删除。
+        版权所有 © 湖南九嶷职业技术学院&nbsp;&nbsp;&nbsp;赵茸&nbsp;&nbsp;&nbsp;版权所有
+      </div>
+      <div class="footerbrs">
+        地址：湖南省永州市冷水滩区永州大道2号&nbsp;&nbsp; 
+        电话：15974670954&nbsp;&nbsp; 
+        E-mali：2814690885@qq.com&nbsp;&nbsp;
+      </div>
+      <div class="footerbrz">技术支持&nbsp;&&&nbsp;湖南九嶷职业技术学院</div>
+    </div>
+  </div>
+</div>
+<style>
+    .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+    </style>
+<script src="js/time.js"></script>
+<script src="js/lunbotu.js"></script>
+<script src="js/public.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/zzsc.js"></script>
+
+<!-- 返回顶部按钮 -->
+<a href="#0" class="cd-top" style="color:#FF0000;text-decoration: none;">Top</a>
+
+</body>
+</html>
